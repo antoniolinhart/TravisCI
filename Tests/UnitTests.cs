@@ -119,9 +119,8 @@ namespace TravisCILab
         }
 
         [Test]
-        public void Power_Null_Fail()
+        public void Power_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Power("1", "2"));
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
